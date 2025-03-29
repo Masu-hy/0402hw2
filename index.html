@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge chrome=1 =">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 修正 viewport 設定，確保使用者可以縮放頁面 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 添加中繼說明，提升 SEO -->
+    <meta name="description" content="Antique Cafe - 享受優質咖啡和美食的咖啡廳。提供各種熱咖啡、冰咖啡和特色飲品，舒適的環境讓您放鬆身心。">
     <title>Antique Bakery Cafe HTML Template by Tooplate</title>
 
     <!-- 預連接到外部資源，減少連接時間 -->
@@ -27,7 +30,7 @@
     <meta http-equiv="Cache-Control" content="max-age=31536000, immutable">
 
     <!-- 禁止翻譯特定內容 -->
-    <meta name="google" content="no translate ">
+    <meta name="google" content="notranslate">
 
     <!--
     Tooplate 2126 Antique Cafe
@@ -36,10 +39,10 @@
 </head>
 <body>
 <!-- Intro -->
-<div id="intro" class="parallax-window" data-parallax="scroll" data-image-src="img/antique-cafe-bg-01.webp" data-image-alt="Antique Cafe" data-natural-width="1600" data-natural-height="1200">
+<div id="intro" class="parallax-window" data-parallax="scroll" data-image-src="img/antique-cafe-bg-01.webp" data-image-alt="Antique Cafe" data-natural-width="1920" data-natural-height="1280">
     <nav id="tm-nav" class="fixed w-full">
         <div class="tm-container mx-auto px-2 md:py-6 text-right">
-            <button class="md:hidden py-2 px-2" id="menu-toggle"><i class="fas fa-2x fa-bars tm-text-gold"></i></button>
+            <button class="md:hidden py-2 px-2" id="menu-toggle" aria-label="Toggle menu"><i class="fas fa-2x fa-bars tm-text-gold"></i></button>
             <ul class="mb-3 md:mb-0 text-2xl font-normal flex justify-end flex-col md:flex-row">
                 <li class="inline-block mb-4 mx-4"><a href="#intro" class="tm-text-gold py-1 md:py-3 px-4">Intro</a></li>
                 <li class="inline-block mb-4 mx-4"><a href="#menu" class="tm-text-gold py-1 md:py-3 px-4">Menu</a></li>
@@ -63,7 +66,7 @@
             <div class="text-center">
                 <div class="inline-block">
                     <a href="#menu" class="flex justify-center items-center bg-black bg-opacity-70 py-6 px-8 rounded-lg font-semibold tm-text-2xl tm-text-gold hover:text-gray-200 transition">
-                        <i class="fas fa-coffee mr-3"></i>
+                        <i class="fas fa-coffee mr-3" aria-hidden="true"></i>
                         <span>Let's explore...</span>
                     </a>
                 </div>
@@ -80,7 +83,7 @@
         <div class="flex flex-col lg:flex-row justify-around items-center">
             <div class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container">
                 <div class="flex items-start mb-6 tm-menu-item">
-                    <img src="img/menu-item-1.webp" alt="Hot Cappuccino" class="rounded-md" width="160" height="120" loading="lazy">
+                    <img src="img/menu-item-1.webp" alt="Hot Cappuccino - A creamy coffee topped with foamed milk" class="rounded-md" width="160" height="120" loading="lazy">
                     <div class="ml-3 sm:ml-6">
                         <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Hot Cappuccino</h3>
                         <div class="text-white text-md sm:text-lg font-light mb-1">S $8.50</div>
@@ -88,7 +91,7 @@
                     </div>
                 </div>
                 <div class="flex items-start mb-6 tm-menu-item">
-                    <img src="img/menu-item-2.webp" alt="Hot Americano" class="rounded-md" width="160" height="120" loading="lazy">
+                    <img src="img/menu-item-2.webp" alt="Hot Americano - Espresso diluted with hot water" class="rounded-md" width="160" height="120" loading="lazy">
                     <div class="ml-3 sm:ml-6">
                         <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Hot Americano</h3>
                         <div class="text-white text-md sm:text-lg font-light mb-1">S $9.50</div>
@@ -96,7 +99,7 @@
                     </div>
                 </div>
                 <div class="flex items-start mb-6 tm-menu-item">
-                    <img src="img/menu-item-3.webp" alt="Hot Latte" class="rounded-md" width="160" height="120" loading="lazy">
+                    <img src="img/menu-item-3.webp" alt="Hot Latte - Espresso with steamed milk" class="rounded-md" width="160" height="120" loading="lazy">
                     <div class="ml-3 sm:ml-6">
                         <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Hot Latte</h3>
                         <div class="text-white text-md sm:text-lg font-light mb-1">M $11.75</div>
@@ -104,7 +107,7 @@
                     </div>
                 </div>
                 <div class="flex items-start mb-6 tm-menu-item">
-                    <img src="img/menu-item-4.webp" alt="Hot Espresso and Hot Chocolate" class="rounded-md" width="160" height="120" loading="lazy">
+                    <img src="img/menu-item-4.webp" alt="Hot Espresso and Hot Chocolate - Rich and intense coffee and chocolate drinks" class="rounded-md" width="160" height="120" loading="lazy">
                     <div class="ml-3 sm:ml-6">
                         <h3 class="text-lg sm:text-xl tm-text-yellow mb-1">Hot Espresso</h3>
                         <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Hot Chocolate</h3>
@@ -119,7 +122,7 @@
                         <div class="text-white text-md sm:text-lg font-light mb-1">Small $10</div>
                         <div class="text-white text-md sm:text-lg font-light">Large $15</div>
                     </div>
-                    <img src="img/menu-item-5.webp" alt="Iced Cappuccino" class="rounded-md" width="160" height="120" loading="lazy">
+                    <img src="img/menu-item-5.webp" alt="Iced Cappuccino - Cold and refreshing cappuccino served with ice" class="rounded-md" width="160" height="120" loading="lazy">
                 </div>
                 <div class="flex items-start justify-end mb-6 tm-menu-item-2">
                     <div class="text-right mr-6">
@@ -127,7 +130,7 @@
                         <div class="text-white text-md sm:text-lg font-light mb-1">Small $12.50</div>
                         <div class="text-white text-md sm:text-lg font-light">Large $16.50</div>
                     </div>
-                    <img src="img/menu-item-6.webp" alt="Iced Americano" class="rounded-md" width="160" height="120" loading="lazy">
+                    <img src="img/menu-item-6.webp" alt="Iced Americano - Chilled espresso with cold water and ice" class="rounded-md" width="160" height="120" loading="lazy">
                 </div>
                 <div class="flex items-start justify-end mb-6 tm-menu-item-2">
                     <div class="text-right mr-6">
@@ -135,7 +138,7 @@
                         <div class="text-white text-md sm:text-lg font-light mb-1">Small $14</div>
                         <div class="text-white text-md sm:text-lg font-light">Large $18</div>
                     </div>
-                    <img src="img/menu-item-7.webp" alt="Iced Milky Latte" class="rounded-md" width="160" height="120" loading="lazy">
+                    <img src="img/menu-item-7.webp" alt="Iced Milky Latte - Cold espresso with milk and ice" class="rounded-md" width="160" height="120" loading="lazy">
                 </div>
                 <div class="flex items-start justify-end mb-6 tm-menu-item-2">
                     <div class="text-right mr-6">
@@ -143,7 +146,7 @@
                         <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Iced Mocha</h3>
                         <div class="text-white text-md sm:text-lg font-light">Small $10 . Large $15</div>
                     </div>
-                    <img src="img/menu-item-8.webp" alt="Iced Espresso and Iced Mocha" class="rounded-md" width="160" height="120" loading="lazy">
+                    <img src="img/menu-item-8.webp" alt="Iced Espresso and Iced Mocha - Cold espresso and chocolate coffee drinks" class="rounded-md" width="160" height="120" loading="lazy">
                 </div>
             </div>
         </div>
@@ -162,7 +165,7 @@
                     very helpful. Another way is to tell your friends about Tooplate website. Thank you. </p>
             </div>
             <a href="#contact" class="inline-block tm-bg-green transition text-white text-xl pt-3 pb-4 px-8 rounded-md">
-                <i class="far fa-comments mr-4"></i>
+                <i class="far fa-comments mr-4" aria-hidden="true"></i>
                 Contact
             </a>
         </div>
@@ -183,7 +186,7 @@
                 </p>
                 <div class="text-center">
                     <a href="https://www.google.com/maps" class="inline-block text-white text-2xl pl-10 pr-12 py-6 rounded-lg transition tm-bg-green">
-                        <i class="fas fa-map-marked-alt mr-8"></i>
+                        <i class="fas fa-map-marked-alt mr-8" aria-hidden="true"></i>
                         Open Maps
                     </a>
                 </div>
@@ -273,6 +276,9 @@
                 });
             });
         });
+
+        // 優化 parallax 圖片
+        optimizeParallaxImages();
     }
 
     // 優化後的 checkAndShowHideMenu 函數
@@ -291,6 +297,36 @@
                 navMenu.classList.remove('hidden');
             }
         }
+    }
+
+    // 優化 parallax 圖片
+    function optimizeParallaxImages() {
+        // 獲取所有 parallax 圖片
+        var parallaxSliders = document.querySelectorAll('.parallax-slider');
+
+        parallaxSliders.forEach(function(slider) {
+            // 確保圖片有 alt 屬性
+            if (!slider.hasAttribute('alt')) {
+                slider.setAttribute('alt', 'Cafe background image');
+            }
+
+            // 添加寬度和高度屬性，防止佈局偏移
+            if (!slider.hasAttribute('width')) {
+                slider.setAttribute('width', '1920');
+            }
+            if (!slider.hasAttribute('height')) {
+                slider.setAttribute('height', '1280');
+            }
+
+            // 添加解碼屬性
+            slider.setAttribute('decoding', 'async');
+
+            // 優化 transform 效能
+            var style = slider.getAttribute('style') || '';
+            if (style.indexOf('will-change') === -1) {
+                slider.setAttribute('style', style + '; will-change: transform; object-fit: cover;');
+            }
+        });
     }
 
     // 初始檢查菜單狀態
